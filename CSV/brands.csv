@@ -26,11 +26,17 @@ code,description,specification
 3vra,3GPP VR Advanced Video Media Profile,3GPP-VR
 3vrb,3GPP VR Basic Video Media Profile,3GPP-VR
 3vrm,3GPP VR Main Video Media Profile,3GPP-VR
+adti,Advanced tiling OMAF video profile,OMAF
+aid3,ID3 metadata carried as timed metadata in CMAF,CMAF-ID3
 ARRI,ARRI Digital Camera,ARRI
 av01,AOM Video Codec,AV1-ISOBMFF
 avc1,Advanced Video Coding extensions,ISO
 avci,AVC image and image collection brands,HEIF
 avcs,AVC image sequence brands,HEIF
+avde,AVC-based viewport-dependent OMAF video profile,OMAF
+avif,AV1 image format brand,AVIF
+avio,AV1 intra-only brand,AVIF
+avis,AV1 image sequence brand,AVIF
 bbxm,Blinkbox Master File: H.264 video and 16-bit little-endian LPCM audio,Blinkbox
 CAEP,Canon Digital Camera,Canon
 CDes,Convergent Designs,Convergent
@@ -38,17 +44,21 @@ ca4m,CMAF Media Profile - AC-4 Main,ETSI AC-4
 ca4s,CMAF Media Profile - AC-4 Single Stream,ETSI AC-4
 caaa,CMAF Media Profile - AAC Adaptive Audio,CMAF
 caac,CMAF Media Profile - AAC Core,CMAF
+cabl,CMAF Media Profile for OMAF 3D audio baseline profile,OMAF
 cama,CMAF Media Profile - AAC multichannel adaptive audio,CMAF
 camc,CMAF Media Profile - AAC multichannel audio,CMAF
 caqv,Casio Digital Camera,Casio
 casu,CMAF Media Profile - MPEG-D USAC audio,CMAF
 ccea,CMAF Supplemental Data - CEA-608/708,CMAF
 ccff,Common container file format,DECE
+cdm1,CMAF Media Profile - HEVC HDR10 (chd1) with SCTE Dynamic Metadata app #1 (ST2094-10),SCTE-215-1-1b
+cdm4,CMAF Media Profile compatibility to HDR10+ (ST2094-40),SCTE-215-1-1b
 ceac,CMAF Media Profile - Enhanced AC-3,ETSI AC-3
 cfhd,CMAF Media Profile - AVC HD,CMAF
 cfsd,CMAF Media Profile - AVC SD,CMAF
 chd1,CMAF Media Profile - HEVC HDR10,CMAF
 chdf,CMAF Media Profile - AVC HDHF,CMAF
+chev,CMAF Media Profile for the HEVC-based viewport-dependent OMAF video profile,OMAF
 chhd,CMAF Media Profile - HEVC HHD8,CMAF
 chh1,CMAF Media Profile - HEVC HHD10,CMAF
 clg1,CMAF Media Profile - HEVC HLG10,CMAF
@@ -63,6 +73,8 @@ comp,Compressed boxes,ISO
 csh1,CMAF Media Profile - Scalable HEVC media profile,CMAF
 cud1,CMAF Media Profile - HEVC UHD10,CMAF
 cud8,CMAF Media Profile - HEVC UHD8,CMAF
+cuvd,CMAF Media Profile for the unconstrained HEVC-based viewport-independent OMAF video profile,OMAF
+cvid,CMAF Media Profile for the HEVC-based viewport-independent OMAF video profile,OMAF
 cwvt,CMAF Media Profile - WebVTT,CMAF
 da0a,"DMB AF audio with MPEG Layer II audio, MOT slide show, DLS, JPG/PNG/MNG images",DMB-MAF
 da0b,"DMB AF, extending da0a , with 3GPP timed text, DID, TVA, REL, IPMP",DMB-MAF
@@ -93,13 +105,25 @@ heic,HEVC image and image collection brands,HEIF
 heim,L-HEVC image and image collection brands,HEIF
 heis,L-HEVC image and image collection brands,HEIF
 heix,HEVC image and image collection brands,HEIF
+heoi,OMAF HEVC image profile,OMAF
 hevc,HEVC image sequence brands,HEIF
+hevd,HEVC-based viewport-dependent OMAF video profile,OMAF
+hevi,HEVC-based viewport-independent OMAF video profile,OMAF
 hevm,L-HEVC image sequence brands,HEIF
 hevs,L-HEVC image sequence brands,HEIF
 hevx,HEVC image sequence brands,HEIF
 hvce,L-HEVC explicit reconstruction,NALu Video
 hvci,L-HEVC implicit reconstruction,NALu Video
+hvcx,L-HEVC extended explicit reconstruction brand,NALu Video
 hvti,HEVC Tile Track,NALu Video
+ifsd,IFE-SD Media Profile,IFE
+ifhs,IFE-HSD Media Profile,IFE
+ifhd,IFE-HD Media Profile,IFE
+ifhx,IFE-HHD10 Media Profile,IFE
+ifhh,IFE-HDHDR Media Profile,IFE
+ifhu,IFE-UHD10 Media Profile,IFE
+ifhr,IFE-HDR10 Media Profile,IFE
+ifaa,IFE-AAC Core Media Profile,IFE
 ifrm,"Apple iFrame Specification, Version 8.1 Jan 2013",Apple
 im1i,CMAF Media Profile - IMSC1 Image,CMAF
 im1t,CMAF Media Profile - IMSC1 Text,CMAF
@@ -127,6 +151,7 @@ jp2$20,JPEG2000 Part 1,JPEG2000
 jpeg,JPEG-specific still image brand,HEIF
 jpgs,JPEG image sequence brands,HEIF
 jpm$20,JPEG 2000 Part 6 Compound Images,JPM
+jpoi,OMAF legacy image profile,OMAF
 jpsi,"The JPSearch data interchange format, for the exchange of image collections and respective metadata",JPSearch
 jpx$20,JPEG2000 Part 2,JPX
 jpxb,JPEG XR,JPXR
@@ -143,6 +168,8 @@ M4A$20,"iTunes MPEG-4 audio protected or not, can contain audio + video + 3g tex
 M4B$20,"iTunes AudioBook protected or not, can contain audio + video + 3g text track + chapter track",iTunes
 M4P$20,MPEG-4 protected audio,iTunes
 M4V$20,MPEG-4 protected audio+video,iTunes
+MA1B,AVIF Baseline Profile,AVIF
+MA1A,AVIF Advanced Profile,AVIF
 MFSM,Media File for Samsung video Metadata,Samsung
 MGSV,Home and Mobile Multimedia Platform (HMMP),Sony
 MiAB,Multi-Image Application format brand for MIAF AVC Basic Profile,MIAF
@@ -169,10 +196,16 @@ msdh,Media Segment conforming to the general format type for ISO base media file
 msix,Media Segment conforming to the Indexed Media Segment format type for ISO base media file format.,DASH
 MSNV,Portable multimedia CE products using MP4 file format with AVC video codec and AAC audio codec,IEC 62592
 niko,Nikon Digital Camera,Nikon
+nlsl,Non-linear storyline toolset brand,OMAF
 nras,No Leading Picture Sync Brand,NALu Video
+oa2d,OMAF 2D audio legacy profile,OMAF
+oabl,OMAF 3D audio baseline profile,OMAF
 odcf,OMA DCF (DRM Content Format),OMA DRM 2.0
+ompp,OMAF viewport-independent baseline presentation profile,OMAF
 opf2,OMA PDCF (DRM Content Format),OMA DRM 2.1
 opx2,OMA Adapted PDCF,OMA DRM XBS
+ovdp,OMAF viewport-dependent baseline presentation profile,OMAF
+ovly,Overlay toolset brand,OMAF
 paff,"Generic Partial File",ISO-Partial
 pana,Panasonic Digital Camera,Panasonic
 piff,Protected Interoperable File Format,PIFF
@@ -188,11 +221,23 @@ SEBK,Home and Mobile Multimedia Platform (HMMP),Sony
 senv,Video contents Sony Entertainment Network provides by using MP4 file format,Sony
 sims,Media Segment conforming to the Sub-Indexed Media Segment format type for ISO base media file format.,DASH
 sisx,Single Index Segment used to index MPEG-2 TS based Media Segments.,DASH
+siti,Simple tiling OMAF video profile,OMAF
 slh1,Dynamic metadata for Single Layer SDR-compatible HDR video streams,SL-HDR
 slh2,Dynamic metadata for Single Layer PQ-based HDR video streams,SL-HDR
 slh3,Dynamic metadata for Single Layer HLG-based HDR video streams,SL-HDR
 ssss,Subsegment Index Segment used to index MPEG-2 TS based Media Segments.,DASH
+ttml,OMAF IMSC1 timed text profile,OMAF
+ttwv,OMAF WebVTT timed text profile,OMAF
+uhvi,Unconstrained HEVC-based viewport-independent OMAF video profile,OMAF
 unif,Unified identifiers,ISO
 uvvu,"UltraViolet file brand – conforming to the DECE Common File Format spec, Annex E.",DECE
+vwpt,Viewpoint toolset brand,OMAF
 XAVC,XAVC File Format,Sony
 yt4$20,Google specification for use by YouTube apps,Youtube
+chd2,CMAF High frame rate Media Profile - HEVC HDR10H,CMAF
+cint,CMAF Interlaced Media Profile - INT10,CMAF
+clg2,CMAF High frame rate Media Profile - HEVC HLG10H,CMAF
+cud2,CMAF High frame rate Media Profile - HEVC UHD10H,CMAF
+cud9,CMAF High frame rate Media Profile - HEVC UHD8H,CMAF
+mif2,Image file format structural brand CICP alpha and depth,HEIF
+pred,Image file format brand for predictively coded image items,HEIF
